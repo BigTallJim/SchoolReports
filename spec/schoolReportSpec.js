@@ -9,4 +9,9 @@ describe('Testing School Reports', function(){
     expect(schoolReport.checkReport(testReport)).toEqual("Green: 1");
   });
 
+  it("Report on a single Amber Score", function(){
+    testReport = "Amber"
+    expect(schoolReport.checkReport(testReport)).toEqual("Amber: 1");
+  });
+
 });
