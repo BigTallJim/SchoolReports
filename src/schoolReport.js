@@ -3,11 +3,11 @@ function SchoolReport(){
 }
 
 SchoolReport.prototype.checkReport = function(schoolScores){
-  scoresArray = schoolScores.split(",");
-  redCount = 0;
-  amberCount = 0;
-  greenCount = 0;
-  otherCount = 0;
+  let scoresArray = schoolScores.split(",");
+  let redCount = 0;
+  let amberCount = 0;
+  let greenCount = 0;
+  let otherCount = 0;
 
   scoresArray.forEach(function(score){
     switch(score){
