@@ -14,4 +14,9 @@ describe('Testing School Reports', function(){
     expect(schoolReport.checkReport(testReport)).toEqual("Amber: 1");
   });
 
+  it("Report on a single Red Score", function(){
+    testReport = "Red"
+    expect(schoolReport.checkReport(testReport)).toEqual("Red: 1");
+  });
+
 });
